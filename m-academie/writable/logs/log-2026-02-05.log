@@ -1,0 +1,262 @@
+ERROR - 2026-02-05 14:00:06 --> Can't create database 'muzuri_academie'; database exists
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('CREATE DATABASE `muzuri_academie` CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('CREATE DATABASE `muzuri_academie` CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE DATABASE `muzuri_academie` CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci')
+ 4 SYSTEMPATH\Database\Forge.php(232): CodeIgniter\Database\BaseConnection->query('CREATE DATABASE `muzuri_academie` CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci')
+ 5 SYSTEMPATH\Commands\Database\CreateDatabase.php(136): CodeIgniter\Database\Forge->createDatabase('muzuri_academie')
+ 6 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\CreateDatabase->run([])
+ 7 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:create', [...])
+ 8 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+ 9 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+10 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-02-05 14:18:47 --> Cannot truncate a table referenced in a foreign key constraint (`muzuri_academie`.`participants`, CONSTRAINT `participants_webinar_id_foreign` FOREIGN KEY (`webinar_id`) REFERENCES `muzuri_academie`.`webinars` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('TRUNCATE `webinars`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('TRUNCATE `webinars`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('TRUNCATE `webinars`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2773): CodeIgniter\Database\BaseConnection->query('TRUNCATE `webinars`', null, false)
+ 5 APPPATH\Database\Seeds\InitialSeeder.php(23): CodeIgniter\Database\BaseBuilder->truncate()
+ 6 SYSTEMPATH\Database\Seeder.php(155): App\Database\Seeds\InitialSeeder->run()
+ 7 SYSTEMPATH\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Seeds\\InitialSeeder')
+ 8 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run([])
+ 9 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', [...])
+10 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+11 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+12 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+DEBUG - 2026-02-05 14:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-05 14:26:38 --> Error: Call to undefined function set_value()
+[Method: GET, Route: registration/index/1]
+in APPPATH\Views\registration.php on line 31.
+ 1 SYSTEMPATH\View\View.php(238): include()
+ 2 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('registration', [], true)
+ 4 APPPATH\Controllers\Registration.php(27): view('registration', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Registration->index('1')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-05 14:39:50 --> Error: Call to undefined function set_value()
+[Method: GET, Route: registration]
+in APPPATH\Views\registration.php on line 31.
+ 1 SYSTEMPATH\View\View.php(238): include()
+ 2 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('registration', [], true)
+ 4 APPPATH\Controllers\Registration.php(27): view('registration', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Registration->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-02-05 14:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 14:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-05 14:41:15 --> Error: Call to undefined function set_value()
+[Method: GET, Route: registration/index/1]
+in APPPATH\Views\registration.php on line 31.
+ 1 SYSTEMPATH\View\View.php(238): include()
+ 2 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('registration', [], true)
+ 4 APPPATH\Controllers\Registration.php(27): view('registration', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Registration->index('1')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-05 14:41:19 --> Error: Call to undefined function set_value()
+[Method: GET, Route: registration/index/1]
+in APPPATH\Views\registration.php on line 31.
+ 1 SYSTEMPATH\View\View.php(238): include()
+ 2 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('registration', [], true)
+ 4 APPPATH\Controllers\Registration.php(27): view('registration', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Registration->index('1')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-05 14:46:56 --> Error: Call to undefined function set_value()
+[Method: GET, Route: registration/index/1]
+in APPPATH\Views\registration.php on line 31.
+ 1 SYSTEMPATH\View\View.php(238): include()
+ 2 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('registration', [], true)
+ 4 APPPATH\Controllers\Registration.php(27): view('registration', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Registration->index('1')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-05 14:48:37 --> Error: Call to undefined function set_value()
+[Method: GET, Route: registration/index/1]
+in APPPATH\Views\registration.php on line 31.
+ 1 SYSTEMPATH\View\View.php(238): include()
+ 2 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('registration', [], true)
+ 4 APPPATH\Controllers\Registration.php(27): view('registration', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Registration->index('1')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-02-05 14:52:47 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\muzuriacademie\m-academie\system\Email\Email.php:1776
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'C:\\xampp\\htdocs...', 1776)
+#1 C:\xampp\htdocs\muzuriacademie\m-academie\system\Email\Email.php(1776): mail('gadnyumbaiza@gm...', '=?UTF-8?Q?Confi...', 'Bonjour Gad TAM...', 'Date: Thu, 5 Fe...', '-f no-reply@muz...')
+#2 C:\xampp\htdocs\muzuriacademie\m-academie\system\Email\Email.php(1708): CodeIgniter\Email\Email->sendWithMail()
+#3 C:\xampp\htdocs\muzuriacademie\m-academie\system\Email\Email.php(1602): CodeIgniter\Email\Email->spoolEmail()
+#4 C:\xampp\htdocs\muzuriacademie\m-academie\app\Controllers\Registration.php(80): CodeIgniter\Email\Email->send()
+#5 C:\xampp\htdocs\muzuriacademie\m-academie\app\Controllers\Registration.php(65): App\Controllers\Registration->sendConfirmationEmail('gadnyumbaiza@gm...', 'Gad TAMBWE')
+#6 C:\xampp\htdocs\muzuriacademie\m-academie\system\CodeIgniter.php(951): App\Controllers\Registration->create()
+#7 C:\xampp\htdocs\muzuriacademie\m-academie\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+#8 C:\xampp\htdocs\muzuriacademie\m-academie\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\muzuriacademie\m-academie\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\muzuriacademie\m-academie\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\muzuriacademie\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2026-02-05 14:52:47 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2026-02-05 14:52:47 --> 
+ERROR - 2026-02-05 14:52:47 --> Email failed: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br><pre>Date: Thu, 5 Feb 2026 14:52:45 +0000
+From: =?UTF-8?Q?Muzuri=20Acad=C3=A9mie?= &lt;no-reply@muzuriacademie.com&gt;
+Return-Path: &lt;no-reply@muzuriacademie.com&gt;
+Reply-To: &lt;no-reply@muzuriacademie.com&gt;
+User-Agent: CodeIgniter
+X-Sender: no-reply@muzuriacademie.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6984aebda40e89.84302809@muzuriacademie.com&gt;
+Mime-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+</pre>
+DEBUG - 2026-02-05 14:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 14:53:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 14:53:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-02-05 15:03:38 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\muzuriacademie\m-academie\system\Email\Email.php:1776
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'C:\\xampp\\htdocs...', 1776)
+#1 C:\xampp\htdocs\muzuriacademie\m-academie\system\Email\Email.php(1776): mail('HKJ@GMAIL.com', '=?UTF-8?Q?Confi...', 'Bonjour Gad TAM...', 'Date: Thu, 5 Fe...', '-f no-reply@muz...')
+#2 C:\xampp\htdocs\muzuriacademie\m-academie\system\Email\Email.php(1708): CodeIgniter\Email\Email->sendWithMail()
+#3 C:\xampp\htdocs\muzuriacademie\m-academie\system\Email\Email.php(1602): CodeIgniter\Email\Email->spoolEmail()
+#4 C:\xampp\htdocs\muzuriacademie\m-academie\app\Controllers\Registration.php(96): CodeIgniter\Email\Email->send()
+#5 C:\xampp\htdocs\muzuriacademie\m-academie\app\Controllers\Registration.php(81): App\Controllers\Registration->sendConfirmationEmail('HKJ@GMAIL.com', 'Gad TAMBWE')
+#6 C:\xampp\htdocs\muzuriacademie\m-academie\system\CodeIgniter.php(951): App\Controllers\Registration->create()
+#7 C:\xampp\htdocs\muzuriacademie\m-academie\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+#8 C:\xampp\htdocs\muzuriacademie\m-academie\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\muzuriacademie\m-academie\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\muzuriacademie\m-academie\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\muzuriacademie\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2026-02-05 15:03:38 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2026-02-05 15:03:38 --> 
+ERROR - 2026-02-05 15:03:38 --> Email failed: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br><pre>Date: Thu, 5 Feb 2026 15:03:36 +0000
+From: =?UTF-8?Q?Muzuri=20Acad=C3=A9mie?= &lt;no-reply@muzuriacademie.com&gt;
+Return-Path: &lt;no-reply@muzuriacademie.com&gt;
+Reply-To: &lt;no-reply@muzuriacademie.com&gt;
+User-Agent: CodeIgniter
+X-Sender: no-reply@muzuriacademie.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6984b148538599.44969302@muzuriacademie.com&gt;
+Mime-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+</pre>
+DEBUG - 2026-02-05 15:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-05 15:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-02-05 15:24:36 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\muzuriacademie\m-academie\system\Email\Email.php:1776
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'C:\\xampp\\htdocs...', 1776)
+#1 C:\xampp\htdocs\muzuriacademie\m-academie\system\Email\Email.php(1776): mail('gadnyumbaiza@gm...', '=?UTF-8?Q?Confi...', 'Bonjour Gad TAM...', 'Date: Thu, 5 Fe...', '-f no-reply@muz...')
+#2 C:\xampp\htdocs\muzuriacademie\m-academie\system\Email\Email.php(1708): CodeIgniter\Email\Email->sendWithMail()
+#3 C:\xampp\htdocs\muzuriacademie\m-academie\system\Email\Email.php(1602): CodeIgniter\Email\Email->spoolEmail()
+#4 C:\xampp\htdocs\muzuriacademie\m-academie\app\Controllers\Registration.php(101): CodeIgniter\Email\Email->send()
+#5 C:\xampp\htdocs\muzuriacademie\m-academie\app\Controllers\Registration.php(81): App\Controllers\Registration->sendConfirmationEmail('gadnyumbaiza@gm...', 'Gad TAMBWE')
+#6 C:\xampp\htdocs\muzuriacademie\m-academie\system\CodeIgniter.php(951): App\Controllers\Registration->create()
+#7 C:\xampp\htdocs\muzuriacademie\m-academie\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+#8 C:\xampp\htdocs\muzuriacademie\m-academie\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\muzuriacademie\m-academie\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\muzuriacademie\m-academie\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\muzuriacademie\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2026-02-05 15:24:36 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2026-02-05 15:24:36 --> 
+ERROR - 2026-02-05 15:24:36 --> Email failed: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br><pre>Date: Thu, 5 Feb 2026 15:24:34 +0000
+From: =?UTF-8?Q?Muzuri=20Acad=C3=A9mie?= &lt;no-reply@muzuriacademie.com&gt;
+Return-Path: &lt;no-reply@muzuriacademie.com&gt;
+Reply-To: &lt;no-reply@muzuriacademie.com&gt;
+User-Agent: CodeIgniter
+X-Sender: no-reply@muzuriacademie.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6984b632e630b6.46061441@muzuriacademie.com&gt;
+Mime-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+</pre>
+ERROR - 2026-02-05 15:33:42 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\muzuriacademie\m-academie\system\Email\Email.php:1776
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'C:\\xampp\\htdocs...', 1776)
+#1 C:\xampp\htdocs\muzuriacademie\m-academie\system\Email\Email.php(1776): mail('gadnyumbaiza@gm...', '=?UTF-8?Q?Confi...', 'Bonjour Gad TAM...', 'Date: Thu, 5 Fe...', '-f no-reply@muz...')
+#2 C:\xampp\htdocs\muzuriacademie\m-academie\system\Email\Email.php(1708): CodeIgniter\Email\Email->sendWithMail()
+#3 C:\xampp\htdocs\muzuriacademie\m-academie\system\Email\Email.php(1602): CodeIgniter\Email\Email->spoolEmail()
+#4 C:\xampp\htdocs\muzuriacademie\m-academie\app\Controllers\Registration.php(101): CodeIgniter\Email\Email->send()
+#5 C:\xampp\htdocs\muzuriacademie\m-academie\app\Controllers\Registration.php(81): App\Controllers\Registration->sendConfirmationEmail('gadnyumbaiza@gm...', 'Gad TAMBWE')
+#6 C:\xampp\htdocs\muzuriacademie\m-academie\system\CodeIgniter.php(951): App\Controllers\Registration->create()
+#7 C:\xampp\htdocs\muzuriacademie\m-academie\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+#8 C:\xampp\htdocs\muzuriacademie\m-academie\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\muzuriacademie\m-academie\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\muzuriacademie\m-academie\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\muzuriacademie\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2026-02-05 15:33:42 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2026-02-05 15:33:42 --> 
+ERROR - 2026-02-05 15:33:42 --> Email failed: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br><pre>Date: Thu, 5 Feb 2026 15:33:40 +0000
+From: =?UTF-8?Q?Muzuri=20Acad=C3=A9mie?= &lt;no-reply@muzuriacademie.com&gt;
+Return-Path: &lt;no-reply@muzuriacademie.com&gt;
+Reply-To: &lt;no-reply@muzuriacademie.com&gt;
+User-Agent: CodeIgniter
+X-Sender: no-reply@muzuriacademie.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6984b854bc4ce4.69593544@muzuriacademie.com&gt;
+Mime-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+</pre>
+ERROR - 2026-02-05 15:36:36 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\muzuriacademie\m-academie\system\Email\Email.php:1776
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'C:\\xampp\\htdocs...', 1776)
+#1 C:\xampp\htdocs\muzuriacademie\m-academie\system\Email\Email.php(1776): mail('gadnyumbaiza@gm...', '=?UTF-8?Q?Confi...', 'Bonjour Gad TAM...', 'Date: Thu, 5 Fe...', '-f no-reply@muz...')
+#2 C:\xampp\htdocs\muzuriacademie\m-academie\system\Email\Email.php(1708): CodeIgniter\Email\Email->sendWithMail()
+#3 C:\xampp\htdocs\muzuriacademie\m-academie\system\Email\Email.php(1602): CodeIgniter\Email\Email->spoolEmail()
+#4 C:\xampp\htdocs\muzuriacademie\m-academie\app\Controllers\Registration.php(101): CodeIgniter\Email\Email->send()
+#5 C:\xampp\htdocs\muzuriacademie\m-academie\app\Controllers\Registration.php(81): App\Controllers\Registration->sendConfirmationEmail('gadnyumbaiza@gm...', 'Gad TAMBWE')
+#6 C:\xampp\htdocs\muzuriacademie\m-academie\system\CodeIgniter.php(951): App\Controllers\Registration->create()
+#7 C:\xampp\htdocs\muzuriacademie\m-academie\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+#8 C:\xampp\htdocs\muzuriacademie\m-academie\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\muzuriacademie\m-academie\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\muzuriacademie\m-academie\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\muzuriacademie\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2026-02-05 15:36:36 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2026-02-05 15:36:36 --> 
+ERROR - 2026-02-05 15:36:36 --> Email failed: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br><pre>Date: Thu, 5 Feb 2026 15:36:34 +0000
+From: =?UTF-8?Q?Muzuri=20Acad=C3=A9mie?= &lt;no-reply@muzuriacademie.com&gt;
+Return-Path: &lt;no-reply@muzuriacademie.com&gt;
+Reply-To: &lt;no-reply@muzuriacademie.com&gt;
+User-Agent: CodeIgniter
+X-Sender: no-reply@muzuriacademie.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6984b90203f3b9.30371758@muzuriacademie.com&gt;
+Mime-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+</pre>
