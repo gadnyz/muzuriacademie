@@ -13,7 +13,8 @@ class Registration extends BaseController
 
         if ($webinarId) {
             $webinar = $webinarModel->find($webinarId);
-        } else {
+        }
+        else {
             // Get next webinar if no ID provided
             $webinar = $webinarModel->where('date_time >=', date('Y-m-d H:i:s'))
                 ->orderBy('date_time', 'ASC')
@@ -30,8 +31,19 @@ class Registration extends BaseController
     public function create()
     {
         $webinarID = $this->request->getPost('webinar_id');
+
+        // Basic validation for webinar ID existence
+        if (!$webinarID) {
+            return redirect()->to(base_url())->with('error', 'Identifiant du webinaire manquant.');
+        }
+
         $model = new ParticipantModel();
         $webinarModel = new WebinarModel();
+
+        $webinar = $webinarModel->find($webinarID);
+        if (!$webinar) {
+            return redirect()->to(base_url())->with('error', 'Le webinaire demandé n\'existe pas.');
+        }
 
         // Validation rules
         $rules = [
@@ -58,7 +70,7 @@ class Registration extends BaseController
         ];
 
         if (!$this->validate($rules)) {
-            $webinar = $webinarModel->find($webinarID);
+            // $webinar is already fetched above
             return view('registration', [
                 'validation' => $this->validator,
                 'webinar' => $webinar
@@ -78,24 +90,43 @@ class Registration extends BaseController
         $model->save($data);
 
         // Send Confirmation Email (Simulated for MVP)
-        $this->sendConfirmationEmail($data['email'], $data['name']);
+        $this->sendConfirmationEmail($data['email'], $data['name'], $webinar);
 
-        return redirect()->to(base_url('registration/success'));
+        return redirect()->to(base_url('registration/success/' . $webinarID));
     }
 
-    public function success()
+    public function success($webinarId = null)
     {
-        return view('registration_success');
+        if (!$webinarId) {
+            return redirect()->to(base_url());
+        }
+
+        $webinarModel = new WebinarModel();
+        $webinar = $webinarModel->find($webinarId);
+
+        if (!$webinar) {
+            return redirect()->to(base_url());
+        }
+
+        return view('registration_success', ['webinar' => $webinar]);
     }
 
-    private function sendConfirmationEmail($to, $name)
+    private function sendConfirmationEmail($to, $name, $webinar)
     {
         $email = \Config\Services::email();
 
         $email->setFrom('no-reply@muzuriacademie.com', 'Muzuri Académie');
         $email->setTo($to);
-        $email->setSubject('Confirmation d\'inscription au webinaire');
-        $email->setMessage("Bonjour $name,\n\nVotre inscription au webinaire a bien été confirmée.\n\nCordialement,\nL'équipe Muzuri Académie");
+        $email->setSubject('Confirmation d\'inscription : ' . $webinar['title']);
+
+        $email->setMailType('html');
+
+        $message = view('emails/confirmation', [
+            'name' => $name,
+            'webinar' => $webinar
+        ]);
+
+        $email->setMessage($message);
 
         // We don't stop execution if email fails in this MVP, just log it.
         if (!$email->send()) {

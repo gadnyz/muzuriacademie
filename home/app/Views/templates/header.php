@@ -2,12 +2,40 @@
 <html lang="fr">
 
 <head>
+    <!-- Encodage & responsive -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muzuri Académie</title>
+
+    <!-- Titre SEO (60 caractères max) -->
+    <title>Muzuri Académie | Coaching, Leadership et Développement Personnel</title>
+
+    <!-- Meta description (150–160 caractères) -->
+    <meta name="description"
+          content="Muzuri Académie accompagne leaders, entrepreneurs et organisations à révéler leur potentiel grâce au coaching, aux formations et conférences.">
+
+    <!-- Mots-clés (secondaire, mais utile) -->
+    <meta name="keywords"
+          content="coaching, leadership, développement personnel, formation, conférence, prise de parole, transformation personnelle">
+
+    <!-- Auteur / marque -->
+    <meta name="author" content="Muzuri Académie">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (partage Facebook / LinkedIn) -->
+    <meta property="og:title" content="Muzuri Académie | Révéler le potentiel des leaders">
+    <meta property="og:description"
+          content="Programmes de coaching, formations et conférences pour une transformation durable des individus et organisations.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://muzuriacademie.com">
+    <meta property="og:image" content="https://muzuriacademie.com/assets/img/muzurieAcademie.jpg">
+
+    <!-- Préconnexion & Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Favicon -->
     <style>
         :root {
             --color-geyser: #f0f4f8;

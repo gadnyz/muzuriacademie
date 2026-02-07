@@ -9,7 +9,7 @@ $routes->get('/', 'Home::index');
 $routes->get('verify', 'TestVerification::index');
 
 // Registration
-$routes->get('registration/success', 'Registration::success');
+$routes->get('registration/success/(:num)', 'Registration::success/$1');
 $routes->get('registration/index/(:num)', 'Registration::index/$1');
 $routes->get('registration', 'Registration::index');
 $routes->post('registration/create', 'Registration::create');
@@ -20,7 +20,8 @@ $routes->group('admin', function ($routes) {
     $routes->get('login', 'Admin\Auth::login');
     $routes->post('auth/attemptLogin', 'Admin\Auth::attemptLogin');
     $routes->get('auth/logout', 'Admin\Auth::logout');
-    $routes->get('auth/create_admin', 'Admin\Auth::create_admin'); // Temp for setup
+    $routes->get('auth/logout', 'Admin\Auth::logout');
+    // $routes->get('auth/create_admin', 'Admin\Auth::create_admin'); // Removed for security
 
     // Dashboard
     $routes->get('dashboard', 'Admin\Dashboard::index');

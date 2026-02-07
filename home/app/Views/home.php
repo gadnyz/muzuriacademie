@@ -1,4 +1,4 @@
-<?= $this->include('templates/header') ?>
+﻿<?= $this->include('templates/header') ?>
 
 <!-- 1. WEBINAR REGISTRATION SECTION -->
 <section id="register" class="container" style="padding-top: 4rem; padding-bottom: 4rem;">

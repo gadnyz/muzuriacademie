@@ -47,20 +47,20 @@ class Auth extends BaseController
         return redirect()->to('/admin/login');
     }
 
-    // Temporary route to create an admin user (REMOVE IN PRODUCTION)
-    public function create_admin()
-    {
-        $model = new UserModel();
-        if ($model->countAll() > 0) {
-            return "Admin already exists!";
-        }
-
-        $data = [
-            'email' => 'admin@muzuriacademie.com',
-            'password_hash' => password_hash('admin123', PASSWORD_DEFAULT)
-        ];
-
-        $model->save($data);
-        return "Admin user created: admin@muzuriacademie.com / admin123";
-    }
+// Temporary route to create an admin user (REMOVE IN PRODUCTION)
+// public function create_admin()
+// {
+//     $model = new UserModel();
+//     if ($model->countAll() > 0) {
+//         return "Admin already exists!";
+//     }
+//
+//     $data = [
+//         'email' => 'admin@muzuriacademie.com',
+//         'password_hash' => password_hash('CHANGE_THIS_PASSWORD_IMMEDIATELY', PASSWORD_DEFAULT)
+//     ];
+//
+//     $model->save($data);
+//     return "Admin user created: admin@muzuriacademie.com / admin123";
+// }
 }
