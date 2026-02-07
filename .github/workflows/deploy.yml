@@ -27,6 +27,7 @@ jobs:
             **/.git*
             **/.github/**
             **/.env
+            **/htdocs/index.php
 
       - name: Deploy home (backend)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
