@@ -27,7 +27,7 @@
           content="Programmes de coaching, formations et conférences pour une transformation durable des individus et organisations.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://muzuriacademie.com">
-    <meta property="og:image" content="https://muzuriacademie.com/assets/img/muzurieAcademie.jpg">
+    <meta property="og:image" content="https://muzuriacademie.com/assets/img/logo_muz_off.png.png">
 
     <!-- Préconnexion & Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,6 +36,12 @@
           rel="stylesheet">
 
     <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= base_url('apple-touch-icon.png') ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('favicon-32x32.png') ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('favicon-16x16.png') ?>">
+    <link rel="shortcut icon" href="<?= base_url('favicon.ico') ?>">
+    <link rel="manifest" href="<?= base_url('site.webmanifest') ?>">
+    <meta name="theme-color" content="#ffffff">
     <style>
         :root {
             --color-geyser: #f0f4f8;

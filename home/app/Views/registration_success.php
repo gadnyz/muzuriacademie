@@ -7,7 +7,7 @@
         <div style="font-size: 4rem; margin-bottom: 1rem; color: var(--color-jungle-green);"><i
                 class="fas fa-check-circle"></i></div>
 
-        <h2 style="color: var(--color-elephant); margin-bottom: 1rem;">Félicitations !</h2>
+        <h2 style="color: var(--color-elephant); margin-bottom: 1rem;">Félicitations 🎉</h2>
         <h3 style="color: var(--color-jungle-green); margin-top: 0;">Votre inscription est confirmée.</h3>
 
         <p style="font-size: 1.1rem; color: var(--color-regent-gray); margin-bottom: 2rem;">

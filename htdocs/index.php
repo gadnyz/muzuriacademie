@@ -8,6 +8,10 @@ use Config\Paths;
  * CHECK PHP VERSION
  *---------------------------------------------------------------
  */
+ 
+define('ENVIRONMENT', 'development');
+// var_dump(defined('ENVIRONMENT') ? ENVIRONMENT : 'ENV not defined');
+// exit;
 
 $minPhpVersion = '8.2'; // If you update this, don't forget to update `spark`.
 if (version_compare(PHP_VERSION, $minPhpVersion, '<')) {
@@ -22,6 +26,7 @@ if (version_compare(PHP_VERSION, $minPhpVersion, '<')) {
 
     exit(1);
 }
+
 
 /*
  *---------------------------------------------------------------

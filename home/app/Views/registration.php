@@ -24,6 +24,7 @@
         <?php endif; ?>
 
         <form action="<?= base_url('registration/create') ?>" method="post">
+            <?= csrf_field() ?>
             <input type="hidden" name="webinar_id" value="<?= esc($webinar['id']) ?>">
 
             <div style="margin-bottom: 1rem;">
