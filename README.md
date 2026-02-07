@@ -1,41 +1,50 @@
 # Muzuri Académie
 
-**Révéler le potentiel unique de chacun pour qu'il puisse apporter de la valeur là où il se trouve.**
+Plateforme web de Muzuri Académie pour la promotion des webinaires, l’inscription des participants et un espace admin de suivi.
 
-## À propos
-Muzuri Académie est une organisation basée en **République Démocratique du Congo**. À travers nos programmes de coaching, nos formations et conférences, nous guidons les individus et les organisations vers une transformation durable.
+## Fonctionnalités
+- Page d’accueil avec prochain webinaire
+- Formulaire d’inscription au webinaire
+- Email de confirmation (template HTML)
+- Tableau de bord admin avec filtres, pagination et export CSV
+- Commande CLI pour rappels par email
 
-### Notre Mission
-Révéler le potentiel unique de chacun pour qu'il puisse apporter de la valeur là où il se trouve.
-À travers nos programmes de coaching, nos formations et conférences nous guidons les individus et les organisations vers une transformation durable.
+## Stack technique
+- Backend: PHP 8+ / CodeIgniter 4
+- Base de données: MySQL/MariaDB
+- Frontend: HTML/CSS (templates CI4)
 
-### Nos Piliers
-* **Influencer**
-* **Accompagner**
-* **Transformer**
+## Structure du projet
+- `home/`: application CodeIgniter 4 (app, system, writable, tests)
+- `htdocs/`: point d’entrée web public + assets (`htdocs/index.php`, `htdocs/ressources/`)
 
-## Citation Inspirante
-> John Maxwell nous rappelle une vérité puissante :
-> « Nous n’obtenons pas toujours ce que nous souhaitons, nous obtenons ce que nous choisissons. »
+## Pré-requis
+- PHP 8.x
+- MySQL/MariaDB
+- Composer
+- Serveur web (Apache/Nginx) ou serveur intégré CI4
 
-> "Le succès, c'est la réalisation progressive d'un idéal qui en vaut la peine."
-> — **Emmanuel KISHIKO**, Président de Muzuri Académie
+## Installation rapide
+1. Configurer l’environnement
+   - Dupliquer `home/.env` et ajuster `app.baseURL` et la base de données
+2. Installer les dépendances
+   - `composer install` dans `home/`
+3. Migrer la base de données
+   - `php spark migrate` dans `home/`
+4. Lancer l’application
+   - Servir `htdocs/` comme document root
+   - Accéder au site via l’URL configurée
 
-## Informations de Contact
-* **Localisation** : République Démocratique du Congo
-* **Langue** : Français
-* **Téléphone** :
-  * +243 998 809 767
-  * +243 994 230 865
+## Commandes utiles
+- `php spark migrate`
+- `php spark muzuri:reminders`
 
-## Identité Visuelle
-**Palette de Couleurs :**
-* **Geyser** : `#dee6e5`
-* **Elephant** : `#0f363f`
-* **Jungle Green** : `#2aab73`
-* **Regent Gray** : `#7e92a4`
+## Configuration email
+- Configurer les paramètres SMTP dans `home/app/Config/Email.php` ou via `.env`.
 
-**Logo** : `public/ressources/img/logo.jpg`
+## Notes
+- Le tableau de bord admin est accessible via `/admin`.
+- Les assets sont servis depuis `htdocs/ressources/`.
 
 ---
-**Concepteur de la solution** : Funda [www.funda-online.com]
+Concepteur de la solution : Funda
