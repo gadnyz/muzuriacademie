@@ -34,6 +34,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="<?= base_url('apple-touch-icon.png') ?>">
@@ -53,7 +58,7 @@
             --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
             --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             --radius-md: 12px;
-            --radius-lg: 16px;
+            --radius-lg: 14px;
         }
 
         body {
@@ -83,7 +88,7 @@
             align-items: center;
             justify-content: center;
             padding: 12px 24px;
-            border-radius: 50px;
+            border-radius: 999px;
             /* Pill shape */
             text-decoration: none;
             font-weight: 600;
@@ -145,9 +150,9 @@
 
 <body>
     <header>
-        <div class="logo-container" style="display: flex; align-items: center; gap: 5px;">
+        <div class="logo-container" style="display: flex; align-items: center; gap: 10 px;">
             <img src="<?= base_url('ressources/img/logo.png') ?>" alt="Muzuri Académie Logo" style="max-height: 60px;">
-            <span style="font-weight: bold; font-size: 1.5rem;">MUZURI  <span style="font-weight: 100;">ACADÉMIE</span></span>
+            <span style="font-weight: bold; font-size: 1.5rem;">MUZURI <span style="font-weight: 100;">ACADÉMIE</span></span>
         </div>
 
         <!-- <a href="#register" class="btn btn-primary">Prochain Webinaire</a> -->

@@ -18,13 +18,40 @@
 
                 <div
                     style="display: flex; align-items: center; gap: 15px; color: var(--color-regent-gray); font-weight: 500; margin-bottom: 1.5rem;">
-                    <span><i class="fas fa-calendar-alt"></i> <?= date('d/m/Y', strtotime($webinar['date_time'])) ?></span>
-                    <span><i class="fas fa-clock"></i> <?= date('H:i', strtotime($webinar['date_time'])) ?></span>
+                    <?php
+                    $dt = new DateTime($webinar['date_time']);
+                    $days = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
+                    $months = ['janvier', 'fevrier', 'mars', 'avril', 'mai', 'juin', 'juillet', 'aout', 'septembre', 'octobre', 'novembre', 'decembre'];
+                    $dayName = $days[(int) $dt->format('w')];
+                    $monthName = $months[(int) $dt->format('n') - 1];
+                    $dateLabel = ucfirst($dayName) . ' ' . $dt->format('j') . ' ' . $monthName . ' ' . $dt->format('Y');
+                    $timeLabel = $dt->format('H') . 'h' . $dt->format('i');
+                    ?>
+                    <span><i class="fas fa-calendar-alt"></i> <?= esc($dateLabel) ?></span>
+                    <span><i class="fas fa-clock"></i> <?= esc($timeLabel) ?></span>
                 </div>
 
-                <p style="color: #4a5568; margin-bottom: 2rem; white-space: pre-line;">
+                <p style="color: #4a5568; margin-bottom: 1.25rem; white-space: pre-line;">
                     <?= esc($webinar['description']) ?>
                 </p>
+
+                <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:16px 18px; margin-bottom:2rem;">
+                    <p style="margin:0 0 10px 0; color:#0f172a; font-weight:700; font-size:1rem;">
+                        Pourquoi tant de personnes ont peur de parler en public ?
+                    </p>
+                    <p style="margin:0 0 10px 0; color:#334155; font-size:0.95rem;">
+                        <strong>Tu n’as pas peur de parler.</strong> Tu as peur d’être jugé.
+                    </p>
+                    <ul style="margin:0 0 10px 18px; color:#475569; font-size:0.95rem;">
+                        <li>Et ton corps le sait.</li>
+                        <li>Cœur qui s’emballe.</li>
+                        <li>Voix qui tremble.</li>
+                        <li>Esprit qui se vide.</li>
+                    </ul>
+                    <p style="margin:0; color:#1f2937; font-weight:600; font-size:0.95rem;">
+                        Ce n’est pas un défaut. C’est un mécanisme appris.
+                    </p>
+                </div>
 
                 <a href="<?= base_url('registration/index/' . esc($webinar['id'])) ?>" class="btn btn-primary"
                     style="padding: 15px 35px; font-size: 1.1rem;">
@@ -74,6 +101,9 @@
                 Académie</h2>
             <p style="max-width: 600px; margin: 0 auto; color: var(--color-regent-gray);">
                 Nous sommes dédiés à l'accompagnement des leaders.
+            </p>
+            <p style="max-width: 600px; margin: 0.75rem auto 0; color: var(--color-elephant); font-weight: 600;">
+                Nos piliers
             </p>
         </div>
 

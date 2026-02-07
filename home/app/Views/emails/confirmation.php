@@ -69,6 +69,27 @@
                 </td>
             </tr>
 
+            <!-- WHATSAPP GROUP -->
+            <tr>
+                <td style="padding-top:10px;">
+                    <h3 style="color:#2c3e50; font-size:16px;">
+                        Rejoignez le groupe WhatsApp
+                    </h3>
+
+                    <p style="color:#333333; font-size:15px;">
+                        Pour recevoir les rappels et les mises a jour, rejoignez le groupe WhatsApp via le lien ci-dessous.
+                    </p>
+
+                    <p style="text-align:center; margin:18px 0;">
+                        <a href="https://chat.whatsapp.com/ETh4aDQxFPI08vhskHYFqW"
+                           target="_blank"
+                           style="background:#25d366; color:#ffffff; padding:12px 22px; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">
+                            Rejoindre le groupe WhatsApp
+                        </a>
+                    </p>
+                </td>
+            </tr>
+
             <tr>
                 <td style="padding-top:10px;">
                     <h3 style="color:#2c3e50; font-size:16px;">
