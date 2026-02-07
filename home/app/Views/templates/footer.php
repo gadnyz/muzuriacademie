@@ -10,9 +10,9 @@
                 </p>
             </div>
             <div style="flex: 1; min-width: 240px;">
-                <h4 style="margin: 0 0 0.75rem 0; font-size: 0.95rem;">Nous contacter</h4>
+                <h4 style="margin: 0 0 0.75rem 0; font-size: 0.95rem;">NOUS CONTACTER</h4>
                 <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                    <a href="mailto:contact@muzuriacademie.com" style="color: white; text-decoration: none;">
+                    <a href="mailto:info@muzuriacademie.com" style="color: white; text-decoration: none;">
                         Email : info@muzuriacademie.com
                     </a>
                     <div> Tel : 
