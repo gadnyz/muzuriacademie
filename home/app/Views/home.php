@@ -7,7 +7,7 @@
             style="display: flex; flex-wrap: wrap; gap: 3rem; align-items: center; overflow: hidden; padding: 0;">
 
             <!-- Left: Info -->
-            <div style="flex: 1; min-width: 300px; padding: 3rem;">
+            <div style="flex: 1; min-width: 300px; padding: 1rem;">
                 <span
                     style="background-color: rgba(42, 171, 115, 0.1); color: var(--color-jungle-green); padding: 5px 12px; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">
                     Prochain Événement
@@ -31,9 +31,9 @@
                     <span><i class="fas fa-clock"></i> <?= esc($timeLabel) ?></span>
                 </div>
 
-                <p style="color: #4a5568; margin-bottom: 1.25rem; white-space: pre-line;">
+                <!-- <p style="color: #4a5568; margin-bottom: 1.25rem; white-space: pre-line;">
                     <?= esc($webinar['description']) ?>
-                </p>
+                </p> -->
 
                 <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:16px 18px; margin-bottom:2rem;">
                     <p style="margin:0 0 10px 0; color:#0f172a; font-weight:700; font-size:1rem;">
@@ -97,8 +97,8 @@
 <section id="about" style="background-color: white; padding: 5rem 2rem;">
     <div class="container">
         <div style="text-align: center; margin-bottom: 4rem;">
-            <h2 style="font-size: 2.2rem; margin-bottom: 1rem; color: var(--color-elephant);">À Propos de Muzuri
-                Académie</h2>
+            <h1 style="font-size: 2.2rem; margin-bottom: 1rem; color: var(--color-elephant);">À Propos de Muzuri
+                Académie</h1>
             <p style="max-width: 600px; margin: 0 auto; color: var(--color-regent-gray);">
                 Nous sommes dédiés à l'accompagnement des leaders.
             </p>

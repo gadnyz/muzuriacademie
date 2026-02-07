@@ -16,19 +16,28 @@
     <!-- Mots-clés (secondaire, mais utile) -->
     <meta name="keywords"
           content="coaching, leadership, développement personnel, formation, conférence, prise de parole, transformation personnelle">
-
     <!-- Auteur / marque -->
     <meta name="author" content="Muzuri Académie">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="<?= base_url() ?>">
 
     <!-- Open Graph (partage Facebook / LinkedIn) -->
     <meta property="og:title" content="Muzuri Académie | Révéler le potentiel des leaders">
     <meta property="og:description"
           content="Programmes de coaching, formations et conférences pour une transformation durable des individus et organisations.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://muzuriacademie.com">
+    <meta property="og:url" content="<?= base_url() ?>">
+    <meta property="og:site_name" content="Muzuri Académie">
+    <meta property="og:locale" content="fr_FR">
     <meta property="og:image" content="<?= base_url('ressources/img/logo_muz_off.png') ?>">
+    <meta property="og:image:alt" content="Muzuri Académie - Logo">
 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Muzuri Académie | Révéler le potentiel des leaders">
+    <meta name="twitter:description"
+          content="Programmes de coaching, formations et conférences pour une transformation durable des individus et organisations.">
+    <meta name="twitter:image" content="<?= base_url('ressources/img/logo_muz_off.png') ?>">
     <!-- Préconnexion & Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +48,6 @@
           integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
           crossorigin="anonymous"
           referrerpolicy="no-referrer">
-
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="<?= base_url('apple-touch-icon.png') ?>">
     <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('favicon-32x32.png') ?>">
@@ -47,6 +55,19 @@
     <link rel="shortcut icon" href="<?= base_url('favicon.ico') ?>">
     <link rel="manifest" href="<?= base_url('site.webmanifest') ?>">
     <meta name="theme-color" content="#ffffff">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Muzuri Académie",
+            "url": "<?= base_url() ?>",
+            "logo": "<?= base_url('ressources/img/logo_muz_off.png') ?>",
+            "sameAs": [
+                "https://www.instagram.com/muzur_iacademie",
+                "https://www.facebook.com/share/1EMGpGmfQY/"
+            ]
+        }
+    </script>
     <style>
         :root {
             --color-white : #ffffff;
@@ -150,7 +171,7 @@
 
 <body>
     <header>
-        <div class="logo-container" style="display: flex; align-items: center; gap: 10 px;">
+        <div class="logo-container" style="display: flex; align-items: center; gap: 10px;">
             <img src="<?= base_url('ressources/img/logo.png') ?>" alt="Muzuri Académie Logo" style="max-height: 60px;">
             <span style="font-weight: bold; font-size: 1.5rem;">MUZURI <span style="font-weight: 100;">ACADÉMIE</span></span>
         </div>

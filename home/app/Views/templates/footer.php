@@ -5,10 +5,7 @@
             <div style="flex: 1; min-width: 260px;">
                 <h4 style="margin: 0 0 0.75rem 0; font-size: 0.95rem; letter-spacing: 0.5px;">MUZURI ACADEMIE</h4>
                 <p style="margin: 0 0 0.5rem 0; color: rgba(255,255,255,0.85);">
-                    Notre mission est de révéler le potentiel unique de chacun.
-                </p>
-                <p style="margin: 0; color: rgba(255,255,255,0.75);">
-                    À travers nos programmes de coaching, nos formations et conférences, nous guidons les individus et
+                    Notre mission est de révéler le potentiel unique de chacun.                   À travers nos programmes de coaching, nos formations et conférences, nous guidons les individus et
                     les organisations vers une transformation durable.
                 </p>
             </div>
