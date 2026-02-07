@@ -27,7 +27,7 @@
           content="Programmes de coaching, formations et conférences pour une transformation durable des individus et organisations.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://muzuriacademie.com">
-    <meta property="og:image" content="https://muzuriacademie.com/assets/img/logo_muz_off.png.png">
+    <meta property="og:image" content="<?= base_url('ressources/img/logo_muz_off.png') ?>">
 
     <!-- Préconnexion & Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,6 +44,7 @@
     <meta name="theme-color" content="#ffffff">
     <style>
         :root {
+            --color-white : #ffffff;
             --color-geyser: #f0f4f8;
             /* Softer gray/blue */
             --color-elephant: #0f363f;
@@ -65,7 +66,7 @@
         }
 
         header {
-            background-color: var(--color-elephant);
+            background-color: var(--color-white);
             padding: 1rem 2rem;
             box-shadow: var(--shadow-sm);
             display: flex;
@@ -144,9 +145,9 @@
 
 <body>
     <header>
-        <div class="logo-container" style="display: flex; align-items: center; gap: 15px;">
+        <div class="logo-container" style="display: flex; align-items: center; gap: 5px;">
             <img src="<?= base_url('ressources/img/logo.png') ?>" alt="Muzuri Académie Logo" style="max-height: 60px;">
-            <span style="color: white; font-weight: bold; font-size: 1.5rem;">MUZURI ACADEMIE</span>
+            <span style="font-weight: bold; font-size: 1.5rem;">MUZURI  <span style="font-weight: 100;">ACADÉMIE</span></span>
         </div>
 
         <!-- <a href="#register" class="btn btn-primary">Prochain Webinaire</a> -->
