@@ -128,6 +128,13 @@ class Registration extends BaseController
 
         $email->setMessage($message);
 
+        $invitationPath = FCPATH . 'ressources/img/invitation.jpg';
+        if (is_file($invitationPath)) {
+            $email->attach($invitationPath);
+        } else {
+            log_message('error', 'Invitation image not found: ' . $invitationPath);
+        }
+
         // We don't stop execution if email fails in this MVP, just log it.
         if (!$email->send()) {
             log_message('error', 'Email failed: ' . $email->printDebugger(['headers']));

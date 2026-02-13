@@ -10,10 +10,10 @@ class InitialSeeder extends Seeder
     {
         // 1. Create Admin User
         $userModel = model('App\Models\UserModel');
-        if ($userModel->where('email', 'admin@muzuriacademie.com')->countAllResults() == 0) {
+        if ($userModel->where('email', 'adm@muzuriacademie.com')->countAllResults() == 0) {
             $userModel->save([
-                'email' => 'admin@muzuriacademie.com',
-                'password_hash' => password_hash('admin123', PASSWORD_DEFAULT),
+                'email' => 'adm@muzuriacademie.com',
+                'password_hash' => password_hash('@dmin+243', PASSWORD_DEFAULT),
             ]);
         }
 
@@ -26,10 +26,9 @@ class InitialSeeder extends Seeder
         $webinarModel = model('App\Models\WebinarModel');
 
         $webinarModel->save([
-            'title' => 'WEBINAIRE OFFERT – ART ORATOIRE',
-            'description' => "Apprenez à parler avec impact et confiance !\n\nAvec Mr Emmanuel KISHIKO\n(Formateur certifié Maxwell Leadership)",
-            'date_time' => '2026-02-08 20:30:00', // Dimanche 8 février 2026 à 20h30
-            'meet_link' => 'https://meet.google.com/abc-defg-hij'
+            'title' => 'Session de clôture de la formation - ART ORATOIRE',
+            'description' => "Session de clôture de la formation - Art Oratoire",
+            'date_time' => '2026-02-22 15:30:00'//
         ]);
     }
 }

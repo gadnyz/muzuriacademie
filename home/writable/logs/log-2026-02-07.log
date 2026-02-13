@@ -193,3 +193,5 @@ Message-ID: &lt;6986e5f7ee0a66.30016078@muzuriacademie.com&gt;
 Mime-Version: 1.0
 Content-Type: multipart/alternative; boundary=&quot;B_ALT_6986e5f7ee0c39.80517500&quot;
 </pre>
+DEBUG - 2026-02-07 12:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-07 12:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

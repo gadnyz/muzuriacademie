@@ -8,21 +8,19 @@
                 class="fas fa-check-circle"></i></div>
 
         <h2 style="color: var(--color-elephant); margin-bottom: 1rem;">Félicitations 🎉</h2>
-        <h3 style="color: var(--color-jungle-green); margin-top: 0;">Votre inscription est confirmée.</h3>
+        <h3 style="color: var(--color-jungle-green); margin-top: 0;">Votre inscription à l'événement est confirmée.</h3>
 
         <p style="font-size: 1.1rem; color: var(--color-regent-gray); margin-bottom: 2rem;">
-            Nous sommes ravis de vous compter parmi nous pour ce webinaire transformateur.
+            Nous sommes ravis de vous compter parmi nous pour cet événement à Kolwezi.
         </p>
 
         <div
             style="background-color: var(--color-geyser); padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; text-align: left;">
             <p><strong>Prochaines étapes :</strong></p>
             <ul style="padding-left: 20px;">
-                <li style="margin-bottom: 0.5rem;">Vérifiez votre boîte mail (y compris les spams) pour le mail de
-                    confirmation.</li>
-                <li style="margin-bottom: 0.5rem;">Notez la date dans votre agenda : <strong>Dimanche 8 février 2026 à
-                        20h30</strong>.</li>
-                <li>Préparez vos questions pour Mr Emmanuel KISHIKO.</li>
+                <li style="margin-bottom: 0.5rem;">Vérifiez votre boîte mail (y compris les spams) pour le message de confirmation.</li>
+                <li style="margin-bottom: 0.5rem;">Conservez l’invitation jointe au mail et présentez‑la à l’entrée le jour de l’événement.</li>
+                <li>Un membre de l’équipe d’organisation vous contactera pour les derniers détails.</li>
             </ul>
         </div>
 

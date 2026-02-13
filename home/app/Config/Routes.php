@@ -26,6 +26,7 @@ $routes->group('admin', function ($routes) {
     // Dashboard
     $routes->get('dashboard', 'Admin\Dashboard::index');
     $routes->get('dashboard/export', 'Admin\Dashboard::export');
+    $routes->get('dashboard/update_db', 'Admin\Dashboard::seedInitial');
 });
 
 // Redirect /admin to /admin/dashboard (which handles login check)

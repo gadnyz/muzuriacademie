@@ -3,7 +3,7 @@
 <div class="container" style="padding: 4rem 2rem;">
     <div
         style="max-width: 600px; margin: 0 auto; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-        <h2 style="color: var(--color-elephant); text-align: center;">Inscription au Webinaire</h2>
+        <h2 style="color: var(--color-elephant); text-align: center;">Inscription au prochain évenement</h2>
 
         <?php if (isset($webinar)): ?>
             <div

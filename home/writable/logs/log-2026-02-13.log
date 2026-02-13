@@ -1,0 +1,686 @@
+DEBUG - 2026-02-13 06:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-13 06:05:17 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: admin/auth/attemptLogin]
+in SYSTEMPATH\Security\Security.php on line 263.
+ 1 SYSTEMPATH\Security\Security.php(263): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('admin/auth/attemptLogin', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-13 06:06:22 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: admin/auth/attemptLogin]
+in SYSTEMPATH\Security\Security.php on line 263.
+ 1 SYSTEMPATH\Security\Security.php(263): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('admin/auth/attemptLogin', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-02-13 06:06:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-02-13 06:06:41 --> CSRF token verified.
+DEBUG - 2026-02-13 06:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:07:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:20:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:21:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-02-13 06:22:13 --> CSRF token verified.
+DEBUG - 2026-02-13 06:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:27:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-02-13 06:27:17 --> Not unique table/alias: 'webinars'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-13 06:27:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'webinars'
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 2 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-13 06:27:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'webinars'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 4 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-13 06:27:17 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'webinars'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-02-13 06:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-02-13 06:28:04 --> Not unique table/alias: 'webinars'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-13 06:28:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'webinars'
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 2 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-13 06:28:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'webinars'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 4 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-13 06:28:04 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'webinars'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-02-13 06:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-02-13 06:28:08 --> Not unique table/alias: 'webinars'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-13 06:28:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'webinars'
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 2 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-13 06:28:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'webinars'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 4 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-13 06:28:08 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'webinars'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-02-13 06:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-02-13 06:28:09 --> Not unique table/alias: 'webinars'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-13 06:28:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'webinars'
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 2 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-13 06:28:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'webinars'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 4 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-13 06:28:09 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'webinars'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-02-13 06:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-02-13 06:28:44 --> Not unique table/alias: 'webinars'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-13 06:28:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'webinars'
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 2 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-13 06:28:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'webinars'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 4 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-13 06:28:44 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'webinars'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-02-13 06:29:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-02-13 06:29:00 --> Not unique table/alias: 'webinars'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-13 06:29:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'webinars'
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 2 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-13 06:29:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'webinars'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 4 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-13 06:29:00 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'webinars'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `participants`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`
+LEFT JOIN `webinars` ON `webinars`.`id` = `participants`.`webinar_id`', [], false)
+ 5 SYSTEMPATH\Model.php(524): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1312): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin\Dashboard.php(48): CodeIgniter\BaseModel->paginate(20)
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-02-13 06:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:45:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-02-13 06:45:30 --> CSRF token verified.
+DEBUG - 2026-02-13 06:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 06:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 07:01:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 07:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 07:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 07:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-02-13 07:02:24 --> CSRF token verified.
+DEBUG - 2026-02-13 07:02:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 07:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 07:04:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-02-13 07:23:26 --> CSRF token verified.
+ERROR - 2026-02-13 07:23:29 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\muzuriacademie\home\system\Email\Email.php:1776
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'C:\\xampp\\htdocs...', 1776)
+#1 C:\xampp\htdocs\muzuriacademie\home\system\Email\Email.php(1776): mail('gadnyumbaiza@gm...', '=?UTF-8?Q?Confi...', 'This is a multi...', 'Date: Fri, 13 F...', '-f no-reply@muz...')
+#2 C:\xampp\htdocs\muzuriacademie\home\system\Email\Email.php(1708): CodeIgniter\Email\Email->sendWithMail()
+#3 C:\xampp\htdocs\muzuriacademie\home\system\Email\Email.php(1602): CodeIgniter\Email\Email->spoolEmail()
+#4 C:\xampp\htdocs\muzuriacademie\home\app\Controllers\Registration.php(139): CodeIgniter\Email\Email->send()
+#5 C:\xampp\htdocs\muzuriacademie\home\app\Controllers\Registration.php(93): App\Controllers\Registration->sendConfirmationEmail('gadnyumbaiza@gm...', 'Gad Nyz', Array)
+#6 C:\xampp\htdocs\muzuriacademie\home\system\CodeIgniter.php(951): App\Controllers\Registration->create()
+#7 C:\xampp\htdocs\muzuriacademie\home\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+#8 C:\xampp\htdocs\muzuriacademie\home\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\muzuriacademie\home\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\muzuriacademie\home\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\muzuriacademie\htdocs\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2026-02-13 07:23:29 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2026-02-13 07:23:29 --> 
+ERROR - 2026-02-13 07:23:29 --> Email failed: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br><pre>Date: Fri, 13 Feb 2026 07:23:27 +0200
+From: =?UTF-8?Q?Muzuri=20Acad=C3=A9mie?= &lt;no-reply@muzuriacademie.com&gt;
+Return-Path: &lt;no-reply@muzuriacademie.com&gt;
+Reply-To: &lt;no-reply@muzuriacademie.com&gt;
+User-Agent: CodeIgniter
+X-Sender: no-reply@muzuriacademie.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;698eb54f188c10.27437420@muzuriacademie.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/mixed; boundary=&quot;B_ATC_698eb54f189101.11655199&quot;
+</pre>

@@ -84,8 +84,9 @@
             </div>
         <?php endif; ?>
 
-        <form action="/admin/auth/attemptLogin" method="post">
-            <div class="form-group">
+        <form action="<?=base_url('/admin/auth/attemptLogin')?>" method="post">
+        <?= csrf_field() ?>    
+        <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" value="<?= old('email') ?>" required autofocus>
             </div>

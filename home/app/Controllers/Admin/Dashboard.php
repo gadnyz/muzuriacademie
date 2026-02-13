@@ -15,6 +15,9 @@ class Dashboard extends BaseController
         }
 
         $participantModel = new ParticipantModel();
+        $participantModel
+            ->select('participants.*, webinars.title as webinar_title')
+            ->join('webinars', 'webinars.id = participants.webinar_id', 'left');
         $webinarModel = new WebinarModel();
 
         // Filters
@@ -39,7 +42,7 @@ class Dashboard extends BaseController
         }
 
         $data = [
-            'participants' => $participantModel->paginate(20),
+            'participants' => $participantModel->orderBy('participants.created_at', 'DESC')->paginate(20),
             'pager' => $participantModel->pager,
             'webinars' => $webinarModel->findAll(),
             'filters' => [
@@ -59,6 +62,9 @@ class Dashboard extends BaseController
         }
 
         $participantModel = new ParticipantModel();
+        $participantModel
+            ->select('participants.*, webinars.title as webinar_title')
+            ->join('webinars', 'webinars.id = participants.webinar_id', 'left');
 
         // Apply filters again for export
         $search = $this->request->getGet('search');
@@ -77,7 +83,7 @@ class Dashboard extends BaseController
         if ($webinarId)
             $participantModel->where('webinar_id', $webinarId);
 
-        $participants = $participantModel->findAll();
+        $participants = $participantModel->orderBy('participants.created_at', 'DESC')->findAll();
 
         $filename = 'participants_' . date('Ymd_His') . '.csv';
 
@@ -86,22 +92,38 @@ class Dashboard extends BaseController
         header("Content-Type: application/csv; ");
 
         $file = fopen('php://output', 'w');
-        fputcsv($file, ['ID', 'Webinar ID', 'Nom', 'Email', 'Téléphone', 'Ville', 'Statut', 'Date Inscription']);
+        fputcsv($file, ['ID', 'Webinar ID', 'Webinar', 'Nom', 'Email', 'Téléphone', 'Ville', 'Date Inscription']);
 
         foreach ($participants as $p) {
             fputcsv($file, [
                 $p['id'],
                 $p['webinar_id'],
+                $p['webinar_title'],
                 $p['name'],
                 $p['email'],
                 $p['phone'],
                 $p['city'],
-                $p['status'],
                 $p['created_at']
             ]);
         }
 
         fclose($file);
         exit;
+    }
+
+    public function seedInitial()
+    {
+        if (!session()->get('isLoggedIn')) {
+            return redirect()->to('/admin/login');
+        }
+
+        // if (ENVIRONMENT !== 'development') {
+        //     return redirect()->back();
+        // }
+
+        $seeder = \Config\Database::seeder();
+        $seeder->call('InitialSeeder');
+
+        return "Seeder exécuté";
     }
 }

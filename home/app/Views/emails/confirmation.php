@@ -25,47 +25,27 @@
                     <p>Bonjour <strong><?= esc($name) ?></strong>,</p>
 
                     <p>
-                        Votre inscription au <strong>webinaire offert sur l'art oratoire</strong> est confirmée.
+                        Votre inscription à la <strong>conférence sur l’art oratoire</strong> du <strong>[DATE]</strong> à <strong>Moon Palace</strong> est bien confirmée.
+                        Nous sommes ravis de vous compter parmi nous.
                     </p>
 
                     <p style="background:#f1f5f9; padding:12px; border-radius:6px;">
-                        <strong>Dimanche 8 février 2026</strong><br>
-                        <strong>20h30 (heure de Lubumbashi)</strong>
+                        <strong>Lieu :</strong> Hôtel Moon Palace de Kolwezi
                     </p>
 
                     <p>
-                        Vous avez pris une excellente décision. Vous découvrirez comment dépasser la peur de parler en public et prendre la parole avec assurance.
+                        Votre invitation est jointe à ce message. Merci de la présenter à l’entrée le jour de l’événement.
                     </p>
                 </td>
             </tr>
 
-            <!-- GOOGLE MEET -->
             <tr>
-                <td style="padding-top:20px;">
-                    <h3 style="color:#2c3e50; font-size:16px;">
-                        Accès au webinaire (Google Meet)
-                    </h3>
-
-                    <p style="color:#333333; font-size:15px;">
-                        Le webinaire se tiendra en ligne sur Google Meet. Cliquez sur le bouton ci-dessous le jour de l'événement pour rejoindre la session.
-                    </p>
-
-                    <p style="text-align:center; margin:20px 0;">
-                        <a href="https://meet.google.com/gbq-bxum-wmv"
-                           target="_blank"
-                           style="background:#1a73e8; color:#ffffff; padding:12px 22px; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">
-                            Rejoindre le webinaire sur Google Meet
-                        </a>
-                    </p>
-
-                    <p style="font-size:14px; color:#555555; text-align:center;">
-                        Lien direct : <br>
-                        <a href="https://meet.google.com/gbq-bxum-wmv"
-                           target="_blank"
-                           style="color:#1a73e8;">
-                            meet.google.com/gbq-bxum-wmv
-                        </a>
-                    </p>
+                <td style="padding-top:10px;">
+                    <div style="text-align:center; background:#f8fafc; padding:16px; border-radius:8px; border:1px solid #e2e8f0;">
+                        <p style="margin:0; font-weight:bold; color:#2c3e50;">
+                            Votre invitation est jointe en annexe du présent mail.
+                        </p>
+                    </div>
                 </td>
             </tr>
 
@@ -77,43 +57,23 @@
                     </h3>
 
                     <p style="color:#333333; font-size:15px;">
-                        Pour recevoir les rappels et les mises a jour, rejoignez le groupe WhatsApp via le lien ci-dessous.
+                        Rejoignez notre groupe WhatsApp pour toutes les informations pratiques :
                     </p>
 
                     <p style="text-align:center; margin:18px 0;">
                         <a href="https://chat.whatsapp.com/ETh4aDQxFPI08vhskHYFqW"
                            target="_blank"
                            style="background:#25d366; color:#ffffff; padding:12px 22px; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">
-                            Rejoindre le groupe WhatsApp
+                            Lien du groupe WhatsApp
                         </a>
                     </p>
                 </td>
             </tr>
 
             <tr>
-                <td style="padding-top:10px;">
-                    <h3 style="color:#2c3e50; font-size:16px;">
-                        Ce qui vous attend
-                    </h3>
-
-                    <ul style="color:#333333; font-size:15px; padding-left:18px;">
-                        <li>Comprendre la puissance de la parole</li>
-                        <li>Identifier les sources de la peur</li>
-                        <li>Parler avec clarté et pertinence</li>
-                        <li>Renforcer l'image de soi</li>
-                    </ul>
-                </td>
-            </tr>
-
-            <tr>
-                <td style="padding-top:20px;">
-                    <h3 style="color:#2c3e50; font-size:16px;">
-                        Partagez et invitez
-                    </h3>
-
-                    <p style="color:#333333; font-size:15px;">
-                        Invitez une personne intéressée par l'art oratoire en partageant le lien d'inscription au webinaire.
-                    </p>
+                <td style="padding-top:10px; color:#333333; font-size:15px; line-height:1.6;">
+                    <p>À très bientôt,</p>
+                    <p>Signature</p>
                 </td>
             </tr>
 

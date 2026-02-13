@@ -37,25 +37,28 @@
 
                 <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:16px 18px; margin-bottom:2rem;">
                     <p style="margin:0 0 10px 0; color:#0f172a; font-weight:700; font-size:1rem;">
-                        Pourquoi tant de personnes ont peur de parler en public ?
+                        Ils ont travaillé en silence.
                     </p>
                     <p style="margin:0 0 10px 0; color:#334155; font-size:0.95rem;">
-                        <strong>Tu n’as pas peur de parler.</strong> Tu as peur d’être jugé.
+                        Ils ont appris à maîtriser les mots, la voix et la présence.
+                        Aujourd’hui, ils sont prêts.
                     </p>
-                    <ul style="margin:0 0 10px 18px; color:#475569; font-size:0.95rem;">
-                        <li>Et ton corps le sait.</li>
-                        <li>Cœur qui s’emballe.</li>
-                        <li>Voix qui tremble.</li>
-                        <li>Esprit qui se vide.</li>
-                    </ul>
-                    <p style="margin:0; color:#1f2937; font-weight:600; font-size:0.95rem;">
-                        Ce n’est pas un défaut. C’est un mécanisme appris.
+                    <p style="margin:0 0 12px 0; color:#0f172a; font-weight:600; font-size:0.95rem;">
+                        Les apprenants de Muzuri Académie montent sur scène pour le couronnement de l’élite de la parole.
+                    </p>
+                    <p style="margin:0 0 10px 0; color:#1f2937; font-size:0.95rem; display:flex; align-items:center; gap:8px;">
+                    <span style="color: var(--color-jungle-green);"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span> 
+                        <span>Hotel <span style="font-weight:100">Moon Palace</span> de Kolwezi</span>
+                    </p>
+                    <p style="margin:0; color:#1f2937; font-size:0.95rem; display:flex; align-items:center; gap:8px;">
+                        <span style="color: var(--color-jungle-green);"><i class="fas fa-ticket-alt" aria-hidden="true"></i></span> 
+                        <span>Entrée <span style="font-weight:100">sur invitation uniquement</span></span>
                     </p>
                 </div>
 
                 <a href="<?= base_url('registration/index/' . esc($webinar['id'])) ?>" class="btn btn-primary"
                     style="padding: 15px 35px; font-size: 1.1rem;">
-                    S'inscrire Gratuitement
+                    Je reserve ma place
                 </a>
             </div>
 
@@ -87,7 +90,7 @@
         <?php if (isset($webinar)): ?>
             <a href="<?= base_url('registration/index/' . esc($webinar['id'])) ?>" class="btn btn-primary"
                 style="background-color: white; color: var(--color-jungle-green);">
-                Rejoindre le webinaire
+                Rejoindre l'évènement
             </a>
         <?php endif; ?>
     </div>
