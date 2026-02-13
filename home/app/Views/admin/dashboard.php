@@ -299,6 +299,9 @@
         $(function () {
             const table = $('#participants-table').DataTable({
                 order: [[6, 'desc']],
+                paging: true,
+                pageLength: 20,
+                lengthMenu: [[10, 20, 50, 100], [10, 20, 50, 100]],
                 columnDefs: [
                     { targets: 0, searchable: false, orderable: false }
                 ],

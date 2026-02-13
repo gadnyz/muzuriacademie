@@ -42,8 +42,7 @@ class Dashboard extends BaseController
         }
 
         $data = [
-            'participants' => $participantModel->orderBy('participants.created_at', 'DESC'),
-            'pager' => $participantModel->pager,
+            'participants' => $participantModel->orderBy('participants.created_at', 'DESC')->findAll(),
             'webinars' => $webinarModel->findAll(),
             'filters' => [
                 'search' => $search,
