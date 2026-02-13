@@ -15,7 +15,7 @@
             <tr>
                 <td style="text-align:center;">
                     <h2 style="color:#2c3e50; margin-bottom:10px;">
-                        FÉLICITATIONS 🎉
+                        FÉLICITATIONS  🎉
                     </h2>
                 </td>
             </tr>
@@ -25,39 +25,27 @@
                     <p>Bonjour <strong><?= esc($name) ?></strong>,</p>
 
                     <p>
-                        Votre inscription à la <strong>conférence sur l’art oratoire</strong> du <strong>[DATE]</strong> à <strong>Moon Palace</strong> est bien confirmée.
+                        Votre inscription à la <strong>Session de clôture de la formation - ART ORATOIRE</strong> est bien confirmée.
                         Nous sommes ravis de vous compter parmi nous.
                     </p>
 
                     <p style="background:#f1f5f9; padding:12px; border-radius:6px;">
-                        <strong>Lieu :</strong> Hôtel Moon Palace de Kolwezi
+                        <strong>Hôtel Moon Palace de Kolwezi 
+                        | Dimanche 22 février 2026 à 15h30</strong>
                     </p>
 
                     <p>
-                        Votre invitation est jointe à ce message. Merci de la présenter à l’entrée le jour de l’événement.
+                        Votre invitation est jointe à ce mail. Merci de la présenter à l’entrée le jour de l’événement.
                     </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td style="padding-top:10px;">
-                    <div style="text-align:center; background:#f8fafc; padding:16px; border-radius:8px; border:1px solid #e2e8f0;">
-                        <p style="margin:0; font-weight:bold; color:#2c3e50;">
-                            Votre invitation est jointe en annexe du présent mail.
-                        </p>
-                    </div>
                 </td>
             </tr>
 
             <!-- WHATSAPP GROUP -->
             <tr>
                 <td style="padding-top:10px;">
-                    <h3 style="color:#2c3e50; font-size:16px;">
-                        Rejoignez le groupe WhatsApp
-                    </h3>
-
+                
                     <p style="color:#333333; font-size:15px;">
-                        Rejoignez notre groupe WhatsApp pour toutes les informations pratiques :
+                        <strong>Rejoignez notre groupe WhatsApp pour toutes les informations pratiques</strong>
                     </p>
 
                     <p style="text-align:center; margin:18px 0;">
@@ -67,13 +55,6 @@
                             Lien du groupe WhatsApp
                         </a>
                     </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td style="padding-top:10px; color:#333333; font-size:15px; line-height:1.6;">
-                    <p>À très bientôt,</p>
-                    <p>Signature</p>
                 </td>
             </tr>
 

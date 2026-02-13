@@ -64,7 +64,7 @@
 
             <!-- Right: Image/Visual -->
             <div style="flex: 1; min-width: 300px; height: 100%; min-height: 400px; padding: 0;">
-                <img src="<?= base_url('ressources/img/EvMoonPalace.jpg') ?>" alt="Emmanuel Kishiko"
+                <img src="<?= base_url('ressources/img/EvMoomPalace.jpg') ?>" alt="Emmanuel Kishiko"
                     style="width: 100%; height: 100%; object-fit: cover; display: block; min-height: 400px; border-radius: 0 var(--radius-lg) var(--radius-lg) 0;">
             </div>
         </div>

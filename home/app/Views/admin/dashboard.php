@@ -247,9 +247,9 @@
                 <tr>
                     <th>N°</th>
                     <th>Nom</th>
-                    <th>Événement</th>
-                    <th>Email</th>
                     <th>Téléphone</th>
+                    <th>Evénement</th>
+                    <th>Email</th>
                     <th>Ville</th>
                     <th>Date</th>
                 </tr>
