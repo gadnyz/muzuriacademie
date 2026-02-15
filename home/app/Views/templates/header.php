@@ -109,10 +109,10 @@
             align-items: center;
             justify-content: center;
             padding: 12px 24px;
-            border-radius: 999px;
+            border-radius: 10px;
             /* Pill shape */
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 400;
             cursor: pointer;
             border: none;
             transition: all 0.3s ease;
