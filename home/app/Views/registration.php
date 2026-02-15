@@ -11,8 +11,26 @@
                 <h3 style="margin: 0; color: var(--color-jungle-green);">
                     <?= esc($webinar['title']) ?>
                 </h3>
+                <?php
+                $dt = new DateTime($webinar['date_time']);
+                $months = [
+                    1 => 'janvier',
+                    2 => 'février',
+                    3 => 'mars',
+                    4 => 'avril',
+                    5 => 'mai',
+                    6 => 'juin',
+                    7 => 'juillet',
+                    8 => 'août',
+                    9 => 'septembre',
+                    10 => 'octobre',
+                    11 => 'novembre',
+                    12 => 'décembre',
+                ];
+                $dateLabel = $dt->format('d') . ' ' . $months[(int) $dt->format('n')] . ' ' . $dt->format('Y') . ' à ' . $dt->format('H\hi');
+                ?>
                 <p style="margin: 0.5rem 0;">
-                    <?= date('d/m/Y H:i', strtotime($webinar['date_time'])) ?>
+                    <?= esc($dateLabel) ?>
                 </p>
             </div>
         <?php endif; ?>

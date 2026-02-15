@@ -229,3 +229,78 @@ Message-ID: &lt;6991100e970725.42727273@muzuriacademie.com&gt;
 Mime-Version: 1.0
 Content-Type: multipart/mixed; boundary=&quot;B_ATC_6991100e970995.89686190&quot;
 </pre>
+DEBUG - 2026-02-15 02:38:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-15 02:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-15 02:38:49 --> ErrorException: unlink(C:\xampp\htdocs\muzuriacademie\home\writable\debugbar/debugbar_1771114185.674119.json): No such file or directory
+[Method: GET, Route: /]
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 82.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\muzuriacademie\\home\\writable\\debugbar/debugbar_1771114185.674119.json): No such file or directory', 'C:\\xampp\\htdocs\\muzuriacademie\\home\\system\\Debug\\Toolbar\\Collectors\\History.php', 82)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(82): unlink('C:\\xampp\\htdocs\\muzuriacademie\\home\\writable\\debugbar/debugbar_1771114185.674119.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(517): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1771115928.570054', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(496): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(152): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(325): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2026-02-15 02:39:12 --> CSRF token verified.
+ERROR - 2026-02-15 02:39:15 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\muzuriacademie\home\system\Email\Email.php:1776
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'C:\\xampp\\htdocs...', 1776)
+#1 C:\xampp\htdocs\muzuriacademie\home\system\Email\Email.php(1776): mail('gadnyz@gmail.co...', '=?UTF-8?Q?Confi...', 'This is a multi...', 'Date: Sun, 15 F...', '-f no-reply@muz...')
+#2 C:\xampp\htdocs\muzuriacademie\home\system\Email\Email.php(1708): CodeIgniter\Email\Email->sendWithMail()
+#3 C:\xampp\htdocs\muzuriacademie\home\system\Email\Email.php(1602): CodeIgniter\Email\Email->spoolEmail()
+#4 C:\xampp\htdocs\muzuriacademie\home\app\Controllers\Registration.php(139): CodeIgniter\Email\Email->send()
+#5 C:\xampp\htdocs\muzuriacademie\home\app\Controllers\Registration.php(93): App\Controllers\Registration->sendConfirmationEmail('gadnyz@gmail.co...', 'Gad Nyz', Array)
+#6 C:\xampp\htdocs\muzuriacademie\home\system\CodeIgniter.php(951): App\Controllers\Registration->create()
+#7 C:\xampp\htdocs\muzuriacademie\home\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+#8 C:\xampp\htdocs\muzuriacademie\home\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\muzuriacademie\home\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\muzuriacademie\home\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\muzuriacademie\htdocs\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2026-02-15 02:39:15 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2026-02-15 02:39:15 --> 
+ERROR - 2026-02-15 02:39:15 --> Email failed: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br><pre>Date: Sun, 15 Feb 2026 02:39:13 +0200
+From: =?UTF-8?Q?Muzuri=20Acad=C3=A9mie?= &lt;no-reply@muzuriacademie.com&gt;
+Return-Path: &lt;no-reply@muzuriacademie.com&gt;
+Reply-To: &lt;no-reply@muzuriacademie.com&gt;
+User-Agent: CodeIgniter
+X-Sender: no-reply@muzuriacademie.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;699115b13dfa86.13153055@muzuriacademie.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/mixed; boundary=&quot;B_ATC_699115b13dfdf5.28627654&quot;
+</pre>
+INFO - 2026-02-15 02:44:44 --> CSRF token verified.
+ERROR - 2026-02-15 02:44:46 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\muzuriacademie\home\system\Email\Email.php:1776
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'C:\\xampp\\htdocs...', 1776)
+#1 C:\xampp\htdocs\muzuriacademie\home\system\Email\Email.php(1776): mail('gadnyz@gmail.co...', '=?UTF-8?Q?Confi...', 'This is a multi...', 'Date: Sun, 15 F...', '-f no-reply@muz...')
+#2 C:\xampp\htdocs\muzuriacademie\home\system\Email\Email.php(1708): CodeIgniter\Email\Email->sendWithMail()
+#3 C:\xampp\htdocs\muzuriacademie\home\system\Email\Email.php(1602): CodeIgniter\Email\Email->spoolEmail()
+#4 C:\xampp\htdocs\muzuriacademie\home\app\Controllers\Registration.php(139): CodeIgniter\Email\Email->send()
+#5 C:\xampp\htdocs\muzuriacademie\home\app\Controllers\Registration.php(93): App\Controllers\Registration->sendConfirmationEmail('gadnyz@gmail.co...', 'Gad Nyz', Array)
+#6 C:\xampp\htdocs\muzuriacademie\home\system\CodeIgniter.php(951): App\Controllers\Registration->create()
+#7 C:\xampp\htdocs\muzuriacademie\home\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+#8 C:\xampp\htdocs\muzuriacademie\home\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\muzuriacademie\home\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\muzuriacademie\home\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\muzuriacademie\htdocs\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2026-02-15 02:44:46 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2026-02-15 02:44:46 --> 
+ERROR - 2026-02-15 02:44:46 --> Email failed: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br><pre>Date: Sun, 15 Feb 2026 02:44:44 +0200
+From: =?UTF-8?Q?Muzuri=20Acad=C3=A9mie?= &lt;no-reply@muzuriacademie.com&gt;
+Return-Path: &lt;no-reply@muzuriacademie.com&gt;
+Reply-To: &lt;no-reply@muzuriacademie.com&gt;
+User-Agent: CodeIgniter
+X-Sender: no-reply@muzuriacademie.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;699116fcc7ea44.78963403@muzuriacademie.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/mixed; boundary=&quot;B_ATC_699116fcc7f219.85224319&quot;
+</pre>

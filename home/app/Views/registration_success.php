@@ -42,18 +42,14 @@
         <?php endif; ?>
 
         <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1rem 1.1rem; color: #1f2937;">
-            <p style="margin: 0 0 0.75rem 0; font-weight: 600; color: var(--color-elephant);">
-                Prochaines étapes
-            </p>
-            <p style="margin: 0 0 0.6rem 0;">
-                Votre inscription est bien enregistrée.
-            </p>
-            <p style="margin: 0 0 0.6rem 0;">
-                Vous recevrez un email contenant votre invitation (pensez à vérifier vos spams).
-            </p>
-            <p style="margin: 0;">
-                Vous serez également appelé(e) par un membre de l'équipe d'organisation pour le suivi.
-            </p>
+            <ul style="margin: 0; padding-left: 1.2rem;">
+                <li style="margin: 0 0 0.6rem 0;">
+                    Vous recevrez un email contenant votre invitation (pensez à vérifier vos spams).
+                </li>
+                <li style="margin: 0;">
+                    Vous serez également appelé(e) par un membre de l'équipe d'organisation pour le suivi.
+                </li>
+            </ul>
         </div>
 
         <div style="margin-top: 1.5rem; text-align: center;">
@@ -63,3 +59,4 @@
 </div>
 
 <?= $this->include('templates/footer') ?>
+
