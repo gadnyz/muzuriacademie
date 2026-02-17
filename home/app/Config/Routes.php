@@ -6,6 +6,8 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
+$routes->get('staging', 'Home::staging');
+
 $routes->get('verify', 'TestVerification::index');
 
 // Registration
@@ -13,6 +15,9 @@ $routes->get('registration/success/(:num)', 'Registration::success/$1');
 $routes->get('registration/index/(:num)', 'Registration::index/$1');
 $routes->get('registration', 'Registration::index');
 $routes->post('registration/create', 'Registration::create');
+
+// Temporary maintenance route (remove after use)
+$routes->get('maintenance/migrate', 'Maintenance::migrate');
 
 // Admin
 $routes->group('admin', function ($routes) {

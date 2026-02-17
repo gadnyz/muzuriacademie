@@ -35,12 +35,29 @@
             </div>
         <?php endif; ?>
 
+        <?php if (session()->getFlashdata('error')): ?>
+            <div style="background-color: #ffe6e6; color: #cc0000; padding: 1rem; border-radius: 5px; margin-bottom: 1rem;">
+                <?= esc(session()->getFlashdata('error')) ?>
+            </div>
+        <?php endif; ?>
+
+        <?php if (!empty($isSoldOut)): ?>
+            <div style="background-color: #ffe6e6; color: #cc0000; padding: 1rem; border-radius: 5px; margin-bottom: 1rem;">
+                Sold Out : le quota de <?= esc($capacity) ?> participants est atteint.
+            </div>
+        <?php elseif (!empty($isUrgent)): ?>
+            <div style="background-color: #fff4e5; color: #b45309; padding: 1rem; border-radius: 5px; margin-bottom: 1rem;">
+                Urgence : il ne reste que <?= esc($remaining) ?> places.
+            </div>
+        <?php endif; ?>
+
         <?php if (isset($validation)): ?>
             <div style="background-color: #ffe6e6; color: #cc0000; padding: 1rem; border-radius: 5px; margin-bottom: 1rem;">
                 <?= $validation->listErrors() ?>
             </div>
         <?php endif; ?>
 
+        <?php if (empty($isSoldOut)): ?>
         <form action="<?= base_url('registration/create') ?>" method="post">
             <?= csrf_field() ?>
             <input type="hidden" name="webinar_id" value="<?= esc($webinar['id']) ?>">
@@ -75,6 +92,7 @@
             <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.1rem;">Je confirme ma
                 participation</button>
         </form>
+        <?php endif; ?>
     </div>
 </div>
 

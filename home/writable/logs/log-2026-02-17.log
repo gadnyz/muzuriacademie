@@ -1,0 +1,13 @@
+CRITICAL - 2026-02-17 21:47:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home_stagiging.php"
+[Method: GET, Route: staging]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home_stagiging.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home_stagiging', [], true)
+ 3 APPPATH\Controllers\Home.php(48): view('home_stagiging', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->staging()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-02-17 21:48:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

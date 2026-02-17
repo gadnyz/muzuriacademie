@@ -25,7 +25,20 @@ class Registration extends BaseController
             return redirect()->to(base_url())->with('error', 'Aucun webinaire disponible pour l\'inscription.');
         }
 
-        return view('registration', ['webinar' => $webinar]);
+        $participantModel = new ParticipantModel();
+        $registeredCount = $participantModel->where('webinar_id', $webinar['id'])->countAllResults();
+        $capacity = isset($webinar['capacity']) ? (int) $webinar['capacity'] : 0;
+        $remaining = $capacity > 0 ? max($capacity - $registeredCount, 0) : null;
+        $isSoldOut = $capacity > 0 && $remaining <= 0;
+        $isUrgent = $capacity > 0 && $remaining <= 20 && $remaining > 0;
+
+        return view('registration', [
+            'webinar' => $webinar,
+            'capacity' => $capacity,
+            'remaining' => $remaining,
+            'isSoldOut' => $isSoldOut,
+            'isUrgent' => $isUrgent
+        ]);
     }
 
     public function create()
@@ -43,6 +56,18 @@ class Registration extends BaseController
         $webinar = $webinarModel->find($webinarID);
         if (!$webinar) {
             return redirect()->to(base_url())->with('error', 'Le webinaire demandé n\'existe pas.');
+        }
+
+        $registeredCount = $model->where('webinar_id', $webinarID)->countAllResults();
+        $capacity = isset($webinar['capacity']) ? (int) $webinar['capacity'] : 0;
+        $remaining = $capacity > 0 ? max($capacity - $registeredCount, 0) : null;
+        $isSoldOut = $capacity > 0 && $remaining <= 0;
+        $isUrgent = $capacity > 0 && $remaining <= 20 && $remaining > 0;
+
+        if ($isSoldOut) {
+            return redirect()
+                ->to(base_url('registration/index/' . $webinarID))
+                ->with('error', 'Sold Out: quota atteint.');
         }
 
         // Validation rules
@@ -73,7 +98,11 @@ class Registration extends BaseController
             // $webinar is already fetched above
             return view('registration', [
                 'validation' => $this->validator,
-                'webinar' => $webinar
+                'webinar' => $webinar,
+                'capacity' => $capacity,
+                'remaining' => $remaining,
+                'isSoldOut' => $isSoldOut,
+                'isUrgent' => $isUrgent
             ]);
         }
 

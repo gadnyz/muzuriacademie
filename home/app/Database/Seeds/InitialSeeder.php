@@ -28,7 +28,8 @@ class InitialSeeder extends Seeder
         $webinarModel->save([
             'title' => 'Session de clôture de la formation - ART ORATOIRE',
             'description' => "Session de clôture de la formation - Art Oratoire",
-            'date_time' => '2026-02-22 15:30:00'//
+            'date_time' => '2026-02-22 15:30:00',//
+            'capacity' => 100
         ]);
     }
 }
