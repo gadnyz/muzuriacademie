@@ -30,7 +30,9 @@ class Registration extends BaseController
         $capacity = isset($webinar['capacity']) ? (int) $webinar['capacity'] : 0;
         $remaining = $capacity > 0 ? max($capacity - $registeredCount, 0) : null;
         $isSoldOut = $capacity > 0 && $remaining <= 0;
-        $isUrgent = $capacity > 0 && $remaining <= 20 && $remaining > 0;
+          $isUrgent = $capacity > 0 
+            && $remaining > 0 
+            && $remaining <= ($capacity / 2);
 
         return view('registration', [
             'webinar' => $webinar,
