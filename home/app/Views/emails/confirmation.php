@@ -38,7 +38,26 @@
                 </td>
             </tr>
 
-            <!-- WHATSAPP GROUP -->
+            <tr>
+                <td style="padding-top:10px;">
+                
+                    <p style="color:#333333; font-size:15px;">
+                        <strong>Lien du webinaire</strong> <br>
+                    </p>
+                    <p>
+                        Cliquez sur le bouton ci-dessous pour accéder au webinaire sur google meet.
+                    </p>
+
+                    <p style="text-align:center; margin:18px 0;">
+                        <a href="https://meet.google.com/fng-xyfn-rux"
+                           target="_blank"
+                           style="background:#0080ff; color:#ffffff; padding:12px 22px; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">
+                            REJOINDRE LE WEBINAIRE
+                        </a>
+                    </p>
+                </td>
+            </tr>
+
             <tr>
                 <td style="padding-top:10px;">
                 
