@@ -26,7 +26,6 @@
 
                     <p>
                         Votre inscription au webinaire offert sur l’art oratoire est confirmée.
-                        Vous avez pris une excellente décision. Vous découvrirez comment dépasser la peur de parler en public et prendre la parole avec assurance.
                     </p>
 
                     <p style="background:#f1f5f9; padding:12px; border-radius:6px;">
@@ -45,6 +44,8 @@
                 
                     <p style="color:#333333; font-size:15px;">
                         <strong>Rejoignez notre communauté WhatsApp</strong> <br>
+                    </p>
+                    <p>
                         Accédez au groupe privé des participants pour recevoir les informations importantes et échanger avec la communauté.
                     </p>
 
