@@ -25,17 +25,16 @@
                     <p>Bonjour <strong><?= esc($name) ?></strong>,</p>
 
                     <p>
-                        Votre inscription à la <strong>Session de clôture de la formation - ART ORATOIRE</strong> est bien confirmée.
-                        Nous sommes ravis de vous compter parmi nous.
+                        Votre inscription au webinaire offert sur l’art oratoire est confirmée.
+                        Vous avez pris une excellente décision. Vous découvrirez comment dépasser la peur de parler en public et prendre la parole avec assurance.
                     </p>
 
                     <p style="background:#f1f5f9; padding:12px; border-radius:6px;">
-                        <strong>Hôtel Moon Palace de Kolwezi 
-                        | Dimanche 22 février 2026 à 15h30</strong>
+                        <strong>Dimanche 16 Mai 2026 à 20h30 (heure de Lubumbashi)</strong>
                     </p>
 
                     <p>
-                        Votre invitation est jointe à ce mail. Merci de la présenter à l’entrée le jour de l’événement.
+                        Vous avez pris une excellente décision. Vous découvrirez comment dépasser la peur de parler en public et prendre la parole avec assurance.
                     </p>
                 </td>
             </tr>
@@ -45,14 +44,15 @@
                 <td style="padding-top:10px;">
                 
                     <p style="color:#333333; font-size:15px;">
-                        <strong>Rejoignez notre groupe WhatsApp pour toutes les informations pratiques</strong>
+                        <strong>Rejoignez notre communauté WhatsApp</strong> <br>
+                        Accédez au groupe privé des participants pour recevoir les informations importantes et échanger avec la communauté.
                     </p>
 
                     <p style="text-align:center; margin:18px 0;">
                         <a href="https://chat.whatsapp.com/ETh4aDQxFPI08vhskHYFqW"
                            target="_blank"
                            style="background:#25d366; color:#ffffff; padding:12px 22px; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">
-                            Lien du groupe WhatsApp
+                            Rejoindre le groupe WhatsApp
                         </a>
                     </p>
                 </td>
