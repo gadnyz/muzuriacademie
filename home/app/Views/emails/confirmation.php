@@ -25,46 +25,25 @@
                     <p>Bonjour <strong><?= esc($name) ?></strong>,</p>
 
                     <p>
-                        Votre inscription au webinaire offert sur l’art oratoire est confirmée.
+                        Votre inscription à la Session de clôture d'accompagnement - ART ORATOIRE est bien confirmée. Nous sommes ravis de vous compter parmi nous.
                     </p>
 
                     <p style="background:#f1f5f9; padding:12px; border-radius:6px;">
-                        <strong>Dimanche 16 Mai 2026 à 20h30 (heure de Lubumbashi)</strong>
+                        <strong> Hôtel Moon Palace de Kolwezi | Dimanche 24 février 2026 à 15h30</strong>
                     </p>
 
                     <p>
-                        Vous avez pris une excellente décision. Vous découvrirez comment dépasser la peur de parler en public et prendre la parole avec assurance.
+                        Votre invitation est jointe à ce mail. Merci de la présenter à l’entrée le jour de l’événement.
                     </p>
                 </td>
             </tr>
 
-            <tr>
-                <td style="padding-top:10px;">
-                
-                    <p style="color:#333333; font-size:15px;">
-                        <strong>Lien du webinaire</strong> <br>
-                    </p>
-                    <p>
-                        Cliquez sur le bouton ci-dessous pour accéder au webinaire sur google meet.
-                    </p>
-
-                    <p style="text-align:center; margin:18px 0;">
-                        <a href="https://meet.google.com/fng-xyfn-rux"
-                           target="_blank"
-                           style="background:#0080ff; color:#ffffff; padding:12px 22px; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block;">
-                            REJOINDRE LE WEBINAIRE
-                        </a>
-                    </p>
-                </td>
-            </tr>
-
+            <!-- WHATSAPP GROUP -->
             <tr>
                 <td style="padding-top:10px;">
                 
                     <p style="color:#333333; font-size:15px;">
                         <strong>Rejoignez notre communauté WhatsApp</strong> <br>
-                    </p>
-                    <p>
                         Accédez au groupe privé des participants pour recevoir les informations importantes et échanger avec la communauté.
                     </p>
 

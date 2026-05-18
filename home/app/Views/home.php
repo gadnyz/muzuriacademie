@@ -8,6 +8,10 @@
 
             <!-- Left: Info -->
             <div style="flex: 1; min-width: 300px; padding: 1rem;">
+                <span
+                    style="background-color: rgba(42, 171, 115, 0.1); color: var(--color-jungle-green); padding: 5px 12px; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">
+                    Prochain Événement
+                </span>
                 <h2 style="color: var(--color-elephant); font-size: 2rem; margin-top: 1rem; margin-bottom: 0.5rem;">
                     <?= esc($webinar['title']) ?>
                 </h2>
@@ -33,24 +37,34 @@
 
                 <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:16px 18px; margin-bottom:2rem;">
                     <p style="margin:0 0 10px 0; color:#0f172a; font-weight:700; font-size:1rem;">
-                        La parole peut ouvrir des portes que la force ne pourra jamais franchir.
+                        Ils ont travaillé en silence.
                     </p>
                     <p style="margin:0 0 10px 0; color:#334155; font-size:0.95rem;">
-                        Rejoignez ce webinar exclusif sur l’Art Oratoire et apprenez à communiquer avec impact, confiance et leadership.
-                        Une soirée d’apprentissage, d’inspiration et de transformation vous attend avec des coachs expérimentés.
+                        Ils ont appris à maîtriser les mots, la voix et la présence.
+                        Aujourd’hui, ils sont prêts.
                     </p>
-                    
+                    <p style="margin:0 0 12px 0; color:#0f172a; font-weight:600; font-size:0.95rem;">
+                        Les apprenants de Muzuri Académie montent sur scène pour le couronnement de l’élite de la parole.
+                    </p>
+                    <p style="margin:0 0 10px 0; color:#1f2937; font-size:0.95rem; display:flex; align-items:center; gap:8px;">
+                    <span style="color: var(--color-jungle-green);"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span> 
+                        <span>Hotel <span style="font-weight:100">Moon Palace</span> de Kolwezi</span>
+                    </p>
+                    <p style="margin:0; color:#1f2937; font-size:0.95rem; display:flex; align-items:center; gap:8px;">
+                        <span style="color: var(--color-jungle-green);"><i class="fas fa-ticket-alt" aria-hidden="true"></i></span> 
+                        <span>Entrée <span style="font-weight:100">sur invitation uniquement</span></span>
+                    </p>
                 </div>
 
                 <a href="<?= base_url('registration/index/' . esc($webinar['id'])) ?>" class="btn btn-primary"
                     style="padding: 15px 35px; font-size: 1.1rem;">
-                    Je confirme ma participation
+                    Je reserve ma place
                 </a>
             </div>
 
             <!-- Right: Image/Visual -->
             <div style="flex: 1; min-width: 300px; height: 100%; min-height: 400px; padding: 0;">
-                <img src="<?= base_url('ressources/img/weboffert.jpg') ?>" alt="Emmanuel Kishiko"
+                <img src="<?= base_url('ressources/img/sessioncloture.jpeg') ?>" alt="Emmanuel Kishiko"
                     style="width: 100%; height: 100%; object-fit: cover; display: block; min-height: 400px; border-radius: 0 var(--radius-lg) var(--radius-lg) 0;">
             </div>
         </div>
